@@ -1,5 +1,2 @@
-# cashregister
-# cashregister
-# cashregister
-# cashregister
-# cashregister
+
+cash register simulation
