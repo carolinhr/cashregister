@@ -15,7 +15,7 @@ public class Apple {
         weight = 0.00220 * weightInGrams;
 
         this.type = type;
-        this.pricePreUnitWeight = pricePreUnitWeight;
+        this.pricePerUnitWeight = pricePerUnitWeight;
     }
 
     //----------------------------------------------------------
