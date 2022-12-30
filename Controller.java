@@ -32,7 +32,7 @@ public class Controller {
 // create an Apple variable named grannySmith with
 // type = "Granny Smith"
 // weight = 140
-// pricePreUnitWeight = 1.51. <- this is the correct numbers
+// pricePreUnitWeight = 1.51
         Apple grannySmith = new Apple("Granny Smith", 1.51, 140);
         grannySmith.displayInfo();
         Payment applePayment1 = new Payment(10, 0, 0, 0, 47);
@@ -55,8 +55,7 @@ public class Controller {
         register.buySandwich(sandwich, sandwichPayment1);
         register.cashInfo("Manager");
 
-        //Payment SAMEPAYMENT = new Payment(10,0,0,0,0);
-
+       //set truth values for each ingredient in sandwich
         boolean meat = true;
         boolean cheese = true;
         boolean veggies = true;
@@ -71,7 +70,6 @@ public class Controller {
             } else {
                 meat = false;
             }
-            //if (i % 2 == 0) {
             if(i == 2 || i == 3 || i == 6 || i == 7) {
                     cheese = false;
             } else {
