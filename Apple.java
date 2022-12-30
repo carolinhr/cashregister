@@ -4,12 +4,12 @@ public class Apple {
 
     private String type;
     private double weight;
-    private double pricePreUnitWeight;
+    private double pricePerUnitWeight;
 
     //----------------------------------------------------------
     // Constructor
     //----------------------------------------------------------
-    public Apple(String type, double pricePreUnitWeight, double weightInGrams) {
+    public Apple(String type, double pricePerUnitWeight, double weightInGrams) {
 
         // convert gram into lbs
         weight = 0.00220 * weightInGrams;
@@ -27,11 +27,11 @@ public class Apple {
         return weight;
     }
 
-    public double getPricePreUnitWeight() {
-        return pricePreUnitWeight;
+    public double getPricePerUnitWeight() {
+        return pricePerUnitWeight;
     }
 
-    public void setPricePreUnitWeight(double pricePreUnitWeight, String personal) {
+    public void setPricePerUnitWeight(double pricePerUnitWeight, String personal) {
     }
 
     public void displayInfo() {
@@ -40,14 +40,14 @@ public class Apple {
         System.out.println("==========================================");
         System.out.printf("Type:\t\t\t\t\t\t %-15s\n", type);
         System.out.printf("Weight:\t\t\t\t\t\t %-6.4f lbs\n", weight);
-        System.out.printf("Price Pre Unit:\t\t\t\t %-10.2f\n", pricePreUnitWeight);
+        System.out.printf("Price Pre Unit:\t\t\t\t %-10.2f\n", pricePerUnitWeight);
         System.out.printf("Price \t\t\t\t\t\t $%-10.2f\n", price());
         System.out.printf("\n");
     }
 
 
     public double price() {
-        double price = weight * pricePreUnitWeight;
+        double price = weight * pricePerUnitWeight;
         return price;
     }
 
