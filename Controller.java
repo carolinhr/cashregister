@@ -9,14 +9,6 @@ public class Controller {
 
     public static void main(String[] args) {
 
-        System.out.println("===============================================");
-        System.out.println("COP 2210 - Project 1 Output");
-        System.out.println("Carolin Heredia");
-        System.out.println("6237318");
-        System.out.println("U02 ");
-        System.out.println("===============================================");
-        System.out.println("\n");
-
         // create a Register
         Register register = new Register(15, 20, 10, 20, 50);
 
